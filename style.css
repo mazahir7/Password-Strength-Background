@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+p span {
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #000;
+	font-size: 19px;
+}
+
+.background {
+	/* background: url(working.jpg) no-repeat center center/cover; */
+	background: red;
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	bottom: -25px;
+	left: -25px;
+	/* filter: blur(20px); */
+	opacity: 0;
+	z-index: -1;
+}
+
+.pass {
+	position: relative;
+}
+
+.pass input {
+	padding-right: 35px;
+}
+
+.pass i {
+	background: #fff;
+	z-index: 9999;
+	cursor: pointer;
+	position: absolute;
+	right: 8px;
+	bottom: 12px;
+}
